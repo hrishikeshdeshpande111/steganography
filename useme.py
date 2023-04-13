@@ -1,7 +1,7 @@
 from steganography import hideMessage, retrieveMessage
 
 # the path to the image you want to hide the message in
-image_path = 'D:/HTML-CSS/steganography/image.jpg'
+image_path = 'image.jpg'
 
 # get the message from the user
 message = input("Enter the message you want to hide: ")
@@ -10,7 +10,7 @@ message = input("Enter the message you want to hide: ")
 hideMessage(image_path, message)
 
 # the path to the modified image that contains the hidden message
-modified_image_path = 'D:/HTML-CSS/steganography/image_hidden.png'
+modified_image_path = 'image_hidden.png'
 
 # retrieve the hidden message from the image
 retrieved_message = retrieveMessage(modified_image_path)
