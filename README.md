@@ -9,6 +9,7 @@ To hide a message in an image, use the hideMessage function. The function takes 
 
 image_path: the path to the image file you want to hide the message in
 message: the message you want to hide in the image
+
 Here's an example of how to use the hideMessage function:
 
 from steganography import hideMessage
@@ -18,14 +19,15 @@ image_path = 'my_image.png'
 message = 'This is a secret message!'
 # hide the message in the image
 hideMessage(image_path, message)
+
 This will create a new image file with the name my_image_hidden.png that contains the hidden message.
 
 Retrieving a Message from an Image
 To retrieve a message from an image, use the retrieveMessage function. The function takes one argument:
 
 image_path: the path to the image file that contains the hidden message
-Here's an example of how to use the retrieveMessage function:
 
+Here's an example of how to use the retrieveMessage function:
 from steganography import retrieveMessage
 # the path to the image file that contains the hidden message
 image_path = 'my_image_hidden.png'
